@@ -2,41 +2,39 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <!-- <meta http-equiv="refresh" content="1"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" type="text/css" href="style2.css">
-  <script type="text/javascript" src="script.js" defer></script>
+  <script src="script.js" defer></script>
   <title>Frontend Mentor | Tip calculator app</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
 </head>
 <body>
   <div class="wrapper" role="main">
-    <img src="./images/logo.svg">
+    <img src="./images/logo.svg" alt="splittericon">
     <div class="calculator-container">
     <div class="box inputs">
      <div class="contain">
          <div>
             <label>Bill</label>
-            <img class="icon" src="./images/icon-dollar.svg">
+            <img class="icon" alt='billicon' src="./images/icon-dollar.svg">
             <input class="in" type="number" name="Bill" placeholder="0">
          </div>
          <div>
             <label>Select Tip %</label>
             <div class="tips">
-              <div class="btn " value="5">5%</div>
-              <div class="btn" value="10">10%</div>
-              <div class="btn" value="15">15%</div>
-              <div class="btn" value="25">25%</div>
-              <div class="btn" value="50">50%</div>
-              <input id="tipIn" type="number" name="tip" placeholder="Custom">
+              <div class="btn "id="5">5%</div>
+              <div class="btn" id="10">10%</div>
+              <div class="btn" id="15">15%</div>
+              <div class="btn" id="25">25%</div>
+              <div class="btn" id="50">50%</div>
+              <input id="tipIn" type="number" name="tip" placeholder="Custom" >
             </div>
           </div>
          <div>
-            <label>Number of People <p class="err">Can't be zero</p></label>
-            <img class="icon" src="./images/icon-person.svg">
+            <span>Number of People <p class="err">Can't be zero</p></span>
+            <img class="icon" src="./images/icon-person.svg" alt="PeopleIcon">
             <input class="in" type="number" name="" placeholder="0">
          </div>
         
@@ -45,11 +43,11 @@
     <div class=" box result">
        <div class="resultcontainer">
           <div class="lbl">
-            <label>Tip Amount <p>/ person</p></label>
+            <span>Tip Amount <p>/ person</p></span>
             <h1 class="res">$<h1 class="totl" id="resAmount">0.00</h1></h1>
           </div>
           <div class="lbl">
-             <label>Total <p>/person</p></label>
+             <span>Total <p>/person</p></span>
              <h1 class="res">$<h1 class="totl" id="resTotal">0.00</h1></h1>
           </div>
        </div> 
@@ -57,29 +55,5 @@
     </div>
     </div>
   </div>
- <!--  Bill
-
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
-
-  Number of People
-
-  Tip Amount
-  / person
-
-  Total
-  / person
-
-  Reset -->
-  
-  <!-- <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div> -->
 </body>
 </html>
