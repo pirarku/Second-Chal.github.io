@@ -184,7 +184,7 @@ input::-webkit-inner-spin-button {
 	display: flex;
 	flex-direction: column;
 }
-.resultcontainer .lbl > span >p{
+.resultcontainer .lbl > span >.p{
     font-size: 10px;
     color: hsl(184, 14%, 56%);
 }
